@@ -173,6 +173,19 @@ Output
 <h3>Services</h3>
 ```
 
+### `json`
+
+Serializes the input value to a json string. To format the json indented, pass the `true` argument to the liquid filter.
+
+Example:
+
+```liquid
+
+{{ Model.ContentItem.Content | json }}
+
+{{ Model.ContentItem.Content | json: true }}
+```
+
 ### `jsonparse`
 
 Converts a json string to a JObject. 
@@ -683,7 +696,7 @@ Input
 {% shape_cache my_shape cache_id: "my-shape", cache_expires_after: "00:05:00" %}
 ```
 
-For more information about the available caching parameters please refer to [this section](../OrchardCore.DynamicCache/#shape-tag-helper-attributes)
+For more information about the available caching parameters please refer to [this section](../DynamicCache/README.md#shape-tag-helper-attributes)
 
 ### `zone`
 
@@ -752,19 +765,19 @@ Invokes the `link` tag helper from the `Orchard.ResourceManagement` package.
 
 ### `meta`
 
-Invokes the `meta` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/#meta-tags)
+Invokes the `meta` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/README.md#meta-tags)
 
 ### `resources`
 
-Invokes the `resources` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/#rendering)
+Invokes the `resources` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/README.md#rendering)
 
 ### `script`
 
-Invokes the `script` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/#inline-definition)
+Invokes the `script` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/README.md#inline-definition)
 
 ### `style`
 
-Invokes the `style` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/#inline-definition)
+Invokes the `style` tag helper from the `Orchard.ResourceManagement` package. [see this section](../Resources/README.md#inline-definition)
 
 ### `a`
 
